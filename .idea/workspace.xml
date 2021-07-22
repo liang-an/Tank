@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7b79ce6-08d6-42cb-b8d7-07ec76ff5a51" name="Default Changelist" comment="" />
+    <list default="true" id="c7b79ce6-08d6-42cb-b8d7-07ec76ff5a51" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mashibing/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mashibing/tank/Bullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mashibing/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mashibing/tank/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mashibing/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mashibing/tank/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/mashibing/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/mashibing/tank/TankFrame.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +38,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../test/Tank" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -77,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626449694404</updated>
-      <workItem from="1626449695546" duration="20434000" />
+      <workItem from="1626449695546" duration="26687000" />
     </task>
     <task id="LOCAL-00001" summary="提交代码">
       <created>1626888008291</created>
@@ -100,7 +106,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626889801685</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="配置公共忽略文件修改">
+      <created>1626890257600</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1626890257600</updated>
+    </task>
+    <task id="LOCAL-00005" summary="配置公共忽略文件修改">
+      <created>1626890324655</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1626890324655</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

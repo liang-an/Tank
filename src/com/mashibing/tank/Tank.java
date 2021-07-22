@@ -8,23 +8,25 @@ public class Tank {
     private Dir dir = Dir.UP;
     private final static int SPEED = 10;
     private boolean moving = false;
-    private boolean shoot = false;
+    private boolean fire = false;
+    private boolean friend = true;
+    private TankFrame tf = null;
 
-    public Tank(int x, int y) {
+    public Tank(int x, int y, boolean friend, TankFrame tf) {
         this.x = x;
         this.y = y;
+        this.friend = friend;
+        this.tf = tf;
     }
 
     public void paint(Graphics g) {
         if (moving){
             tankMoving();
         }
-        Color c = g.getColor();
         g.setColor(Color.YELLOW);
         g.fillRect(x, y, 50, 50);
-        g.setColor(c);
-        if (shoot){
-            shootBullet(g);
+        if (fire){
+            fire(g);
         }
     }
 
@@ -66,7 +68,7 @@ public class Tank {
                 moving = true;
                 break;
             case KeyEvent.VK_SPACE:
-                shoot = true;
+                fire = true;
             default:
                 break;
         }
@@ -87,14 +89,70 @@ public class Tank {
                 moving = false;
                 break;
             case KeyEvent.VK_SPACE:
-//                shoot = false;
+                fire = false;
             default:
                 break;
         }
     }
 
-    private void shootBullet(Graphics g) {
-        Bullet bullet = new Bullet(x, y, dir);
-        bullet.paint(g);
+    private void fire(Graphics g) {
+        Bullet bullet = new Bullet(x+17, y+17, dir, tf);
+        tf.addBulletList(bullet);
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public Dir getDir() {
+        return dir;
+    }
+
+    public void setDir(Dir dir) {
+        this.dir = dir;
+    }
+
+    public boolean isMoving() {
+        return moving;
+    }
+
+    public void setMoving(boolean moving) {
+        this.moving = moving;
+    }
+
+    public boolean isFire() {
+        return fire;
+    }
+
+    public void setFire(boolean fire) {
+        this.fire = fire;
+    }
+
+    public boolean isFriend() {
+        return friend;
+    }
+
+    public void setFriend(boolean friend) {
+        this.friend = friend;
+    }
+
+    public TankFrame getTf() {
+        return tf;
+    }
+
+    public void setTf(TankFrame tf) {
+        this.tf = tf;
     }
 }
